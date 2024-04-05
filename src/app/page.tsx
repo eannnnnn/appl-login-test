@@ -7,7 +7,7 @@ export default function Home() {
     const redirectUri = `https://${location.hostname}`;
     const url = `https://appleid.apple.com/auth/authorize?response_type=code&client_id=${searchParam.get(
       "c"
-    )}&redirect_uri=${encodeURI(`${redirectUri}/oauth/apple`)}&state=SIGN_UP`;
+    )}&redirect_uri=${encodeURI(`${redirectUri}/oauth/apple`)}`;
     location.href = url;
   };
 
