@@ -2,7 +2,7 @@
 
 export default function Home() {
   const onAppleClick = () => {
-    const searchParam = new URLSearchParams(location.href);
+    const searchParam = new URLSearchParams(location.search);
 
     const redirectUri = `https://${location.hostname}`;
     const url = `https://appleid.apple.com/auth/authorize?response_type=code&client_id=${searchParam.get(
